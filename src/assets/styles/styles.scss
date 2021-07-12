@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+@import "./normalize";
+
+.wrapper {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    height: 100vh;
+    background: #e5e5e5;
+}
+
+.layer {
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    border-radius: 25px;
+    background-color: #fff;
+    width: 320px;
+    margin: 15px;
+    padding: 20px 40px;
+}
+
+.layer2 {
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    width: 400px;
+    margin: 15px;
+    padding: 20px 40px;
+}
+
+h1 {
+    width: 109px;
+    height: 21px;
+    font-size: 18px;
+    font-weight: 500;
+    font-size: 18px;
+    font-style: normal;
+    line-height: 21px;
+    color: #37474F;
+}
+
+form {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+}
+
+label {
+    width: 88px;
+    height: 14px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #37474F;
+    margin: 16.5px 8.5px 5.5px 11px;
+}
+
+input,
+textarea {
+    background: #fff;
+    border: 1px solid #DBE1E9;
+    padding: 0 10px;
+    margin: 0 5px 5px 5px;
+    color: #37474F;
+}
+
+input#name-form { width: calc(100% - 30px); }
+input#phone-form,
+input#email-form { width: calc(100% - 120px); }
+input { height: 2rem; }
+
+textarea {
+    padding-top: 10px;
+    height: 60px;
+}
+
+input::placeholder,
+textarea::placeholder {
+    height: 16px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: #BAC9DB;
+}
+
+input.error { border: 1px solid #eeb0b0; }
+.input-notice {
+    font-size: 12px;
+    color: #f00;
+}
+textarea:hover,
+input:hover {
+    border: 1px solid #00D395;
+}
+
+svg {
+    width: 18px;
+    height: 18px;
+}
+
+button {
+    height: 45px;
+    background-color: #00D395;
+    margin: 0.5rem 0;
+    height: 2rem
+}
+
+button:disabled {
+    background: #7f7f7f;
+    cursor: not-allowed;
+}
+
+button.add-btn {
+    width: 75px;
+    height: 28px;
+    background: #00D395;
+    border: none;
+    color: #fff;
+    margin: 0 5.5px;
+    font-size: 13px;
+}
+
+.add-btn svg {
+    width: 13px;
+    height: 13px;
+    margin-right: 7px;
+    margin-bottom: 5px;
+    vertical-align: sub;
+}
+
+button.submit {
+    border: none;
+    color: #fff;
+    margin-top: 20px;
+    width: 100%;
+}
+
+button.default {
+    background: #00d395;
+    color: #fff;
+    border: 1px solid #00d395;
+    font-weight: bolder;
+    width: 100%;
+    margin: 25px 5px;
+}
+
+button:hover {
+    background-color: #0aac7d;
+}
+
+button.outline {
+    background: none;
+    color: #00d395;
+    border: 1px solid #00d395;
+    font-weight: bolder;
+    width: calc(50% - 15px);
+    margin: 15px 7.5px;
+    padding: 5px 0;
+}
+
+button.flat {
+    background: none;
+    color: #00d395;
+    border: none;
+    font-weight: bolder;
+    width: calc(50% - 15px);
+    margin: 15px 7.5px;
+    padding: 5px 0;
+}
+
+button.btn-opacity-bg {
+    background-color: rgba(0, 211, 149, .2)
+}
+
+button.btn-opacity-bg:hover {
+    background-color: rgba(10, 172, 125, .2)
+}
+.tag {
+    width: 160px;
+    height: 22px;
+    background: #EFF3F7;
+    margin: 5px;
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 22px;
+    color: #66707F;
+}
+
+.tag svg {
+    width: 8px;
+    height: 8px;
+    margin: 6px;
+    float: right;
+    position: absolute;
+}
+@media (min-width: 600px) {
+    tag, input, textarea, button {
+        border-radius: 5px;        
+    }
+    button.submit {
+        width: 150px;
+        margin: 20px auto;
+    }
+}
