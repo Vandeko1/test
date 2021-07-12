@@ -1,13 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
 @import "./normalize";
 
+@media (max-width: 600px) {
+    tag, input, textarea, button {
+        border-radius: 5px;        
+    }
+    button.submit {
+        width: 150px;
+        margin: 20px auto;
+    }
+    .wrapper {
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        -ms-flex-direction: column;
+        -o-flex-direction: column;
+        flex-direction: column;
+    }
+}
+
 .wrapper {
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
     display: -o-flex;
     display: flex;
-    height: 100vh;
     background: #e5e5e5;
 }
 
@@ -33,7 +49,7 @@
     flex-direction: column;
     width: 400px;
     margin: 15px;
-    padding: 20px 40px;
+    padding: 20px 0px;
 }
 
 h1 {
@@ -45,6 +61,7 @@ h1 {
     font-style: normal;
     line-height: 21px;
     color: #37474F;
+    margin-left: 10px;
 }
 
 form {
@@ -132,7 +149,7 @@ button.add-btn {
     background: #00D395;
     border: none;
     color: #fff;
-    margin: 0 5.5px;
+    margin: 0 5px;
     font-size: 13px;
 }
 
@@ -140,7 +157,6 @@ button.add-btn {
     width: 13px;
     height: 13px;
     margin-right: 7px;
-    margin-bottom: 5px;
     vertical-align: sub;
 }
 
@@ -210,13 +226,4 @@ button.btn-opacity-bg:hover {
     margin: 6px;
     float: right;
     position: absolute;
-}
-@media (min-width: 600px) {
-    tag, input, textarea, button {
-        border-radius: 5px;        
-    }
-    button.submit {
-        width: 150px;
-        margin: 20px auto;
-    }
 }

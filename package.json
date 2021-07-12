@@ -16,14 +16,14 @@
     "sass": "^1.35.2",
     "vite": "^2.4.0"
   },
-    "browserslist": {
-        "production": [
-            ">0.2%",
-            "not dead",
-            "not op_mini all"
-        ],
-        "development": [
-            "last 8 years"
-        ]
-    }
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 8 years"
+    ]
+  }
 }
